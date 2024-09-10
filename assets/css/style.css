@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(246, 241, 241);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #494b6b;
+    text-align: center;
+}
+
+.game-area {
+    background-color: #f7e7d3;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 40rem;
+    max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 5%;
+}
