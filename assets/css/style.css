@@ -18,13 +18,25 @@ body {
 }
 
 .numbers-area {
+    display: flex;
+    justify-content: center;
+}
+
+.numbers-box {
     background-color: rgb(246, 241, 241);
-    width: 11rem;
-    height: 4rem;
-    margin: auto;
-    padding: 30px;
+    width: 9rem;
+    height: 3rem;
+    padding: 20px;
     text-align: center;
     color:  #494b6b;
+}
+
+.btn-start-game {
+    background-color: #18c30f;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-left: 2rem;
 }
 
 .input-area {
