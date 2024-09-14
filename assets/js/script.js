@@ -10,15 +10,22 @@ let numbers = [];
 let digits = 1;
 
 function generateRandomNumber() {
+    // Disable input field until last number has been shown
+    document.getElementById('player-answer').disabled = true;
+
     for (let i = 0; i < digits; i++) {
         numbers.push(Math.floor(Math.random() * 10));
     }
     // Pass a copy of the numbers array so that the original array doesn't get modified
-    displayNumbers([...numbers])
+    displayNumbers([...numbers]);
 }
 
 function displayNumbers(values) {
-    if (values.length < 1) return
+    if (values.length < 1) {
+        document.getElementById('player-answer').disabled = false;
+        document.getElementById('player-answer').focus();
+        return
+    }
     document.getElementById('number').innerText = values.shift();
     setTimeout(() => {
         document.getElementById('number').innerText = '';
