@@ -1,7 +1,7 @@
 document.getElementById('btn-start-game').addEventListener('click', generateRandomNumber);
 document.getElementById('btn-submit').addEventListener('click', checkAnswer);
 let numbers = [];
-let digits = 3;
+let digits = 1;
 
 function generateRandomNumber() {
     for (let i = 0; i < digits; i++) {
@@ -28,9 +28,13 @@ function checkAnswer() {
     if (correct) {
         alert('Well done! Your answer is correct!');
         increaseCorrectAnswers();
+        ++digits;
     } else {
         alert(`Sorry! Your answer was ${userAnswer}. The correct answer was ${fullNumber}!`);
         increaseWrongAnswers();
+        if (digits > 1) {
+            --digits;
+        }
     }
     numbers = [];
 }
