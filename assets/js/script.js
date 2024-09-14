@@ -7,6 +7,7 @@ function generateRandomNumber() {
     for (let i = 0; i < digits; i++) {
         numbers.push(Math.floor(Math.random() * 10));
     }
+    // Pass a copy of the numbers array so that the original array doesn't get modified
     displayNumbers([...numbers])
 }
 
@@ -15,8 +16,15 @@ function displayNumbers(values) {
     document.getElementById('number').innerText = values.shift();
     setTimeout(() => {
         document.getElementById('number').innerText = '';
-        displayNumbers(values);
+        blankNumbersBox(values);
     }, 1000);
+}
+
+// This method forces a blank period before printing the next number
+function blankNumbersBox(values) {
+    setTimeout(() => {
+        displayNumbers(values);
+    }, 500);
 }
 
 function checkAnswer() {
