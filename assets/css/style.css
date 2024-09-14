@@ -9,7 +9,6 @@ body {
     background-color: #f7e7d3;
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
     max-height: 40rem;
     max-width: 65rem;
     margin-left: auto;
@@ -56,4 +55,20 @@ body {
     margin-left: 1.5rem;
     background-color: #53bed9;
     font-size: 1rem;
+}
+
+.score-area {
+    width: 15rem;
+    height: 3rem;
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.correct-answers {
+    color: #0b9e03
+}
+
+.incorrect-answers {
+    color: #da281b
 }
