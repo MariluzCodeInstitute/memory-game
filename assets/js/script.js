@@ -1,31 +1,38 @@
 document.getElementById('btn-start-game').addEventListener('click', generateRandomNumber);
 document.getElementById('btn-submit').addEventListener('click', checkAnswer);
-let num;
+let numbers = [];
+let digits = 3;
 
 function generateRandomNumber() {
-    num = Math.floor(Math.random() * 10);
-    displayNumber(num)
+    for (let i = 0; i < digits; i++) {
+        numbers.push(Math.floor(Math.random() * 10));
+    }
+    displayNumbers([...numbers])
 }
 
-function displayNumber(number) {
-    document.getElementById('number').innerText = number
+function displayNumbers(values) {
+    if (values.length < 1) return
+    document.getElementById('number').innerText = values.shift();
     setTimeout(() => {
         document.getElementById('number').innerText = '';
-      }, 1000);
+        displayNumbers(values);
+    }, 1000);
 }
 
 function checkAnswer() {
-    let userAnswer = parseInt(document.getElementById('player-answer').value);
-    let correct = userAnswer === num
+    let fullNumber = numbers.join('');
+    let userAnswer = document.getElementById('player-answer').value;
+    let correct = userAnswer === fullNumber
     document.getElementById('player-answer').value = '';
-
+    
     if (correct) {
         alert('Well done! Your answer is correct!');
         increaseCorrectAnswers();
     } else {
-        alert(`Sorry! Your answer was ${userAnswer}. The correct answer was ${num}!`);
+        alert(`Sorry! Your answer was ${userAnswer}. The correct answer was ${fullNumber}!`);
         increaseWrongAnswers();
     }
+    numbers = [];
 }
 
 // Code inspired on the methods to update scores from Love Maths project
