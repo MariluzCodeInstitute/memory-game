@@ -1,5 +1,11 @@
 document.getElementById('btn-start-game').addEventListener('click', generateRandomNumber);
 document.getElementById('btn-submit').addEventListener('click', checkAnswer);
+document.getElementById('player-answer').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        checkAnswer();
+    }
+})
+
 let numbers = [];
 let digits = 1;
 
