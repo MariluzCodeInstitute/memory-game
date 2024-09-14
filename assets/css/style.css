@@ -17,3 +17,13 @@ body {
     padding: 1%;
     border-radius: 5%;
 }
+
+.numbers-area {
+    background-color: rgb(246, 241, 241);
+    width: 20%;
+    height: 15%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    color:  #494b6b;
+}
