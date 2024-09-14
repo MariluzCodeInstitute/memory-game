@@ -1,3 +1,5 @@
+document.getElementById('btn-start-game').addEventListener('click', generateRandomNumber);
+
 function generateRandomNumber() {
     let num = Math.floor(Math.random() * 10);
     displayNumber(num)
