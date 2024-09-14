@@ -6,7 +6,7 @@ body {
 }
 
 .game-area {
-    background-color: #f7e7d3;
+    background-color: #f5d4ac;
     box-sizing: border-box;
     width: 85%;
     max-height: 40rem;
@@ -79,7 +79,7 @@ body {
 }
 
 .correct-answers {
-    color: #18c30f
+    color: #0d8507;
 }
 
 .incorrect-answers {
