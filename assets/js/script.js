@@ -17,10 +17,24 @@ function displayNumber(number) {
 function checkAnswer() {
     let userAnswer = parseInt(document.getElementById('player-answer').value);
     let correct = userAnswer === num
+    document.getElementById('player-answer').value = '';
 
     if (correct) {
         alert('Well done! Your answer is correct!');
+        increaseCorrectAnswers();
     } else {
         alert(`Sorry! Your answer was ${userAnswer}. The correct answer was ${num}!`);
+        increaseWrongAnswers();
     }
+}
+
+// Code inspired on the methods to update scores from Love Maths project
+function increaseCorrectAnswers() {
+    let previousScore = parseInt(document.getElementById('correct-score').innerText)
+    document.getElementById('correct-score').innerText = ++previousScore;
+}
+
+function increaseWrongAnswers() {
+    let previousScore = parseInt(document.getElementById('incorrect-score').innerText)
+    document.getElementById('incorrect-score').innerText = ++previousScore;
 }
