@@ -4,7 +4,7 @@ document.getElementById('player-answer').addEventListener('keydown', function(ev
     if (event.key === 'Enter') {
         checkAnswer();
     }
-})
+});
 
 let numbers = [];
 let digits = 1;
@@ -24,7 +24,7 @@ function displayNumbers(values) {
     if (values.length < 1) {
         document.getElementById('player-answer').disabled = false;
         document.getElementById('player-answer').focus();
-        return
+        return;
     }
     document.getElementById('number').innerText = values.shift();
     setTimeout(() => {
@@ -43,7 +43,7 @@ function blankNumbersBox(values) {
 function checkAnswer() {
     let fullNumber = numbers.join('');
     let userAnswer = document.getElementById('player-answer').value;
-    let correct = userAnswer === fullNumber
+    let correct = userAnswer === fullNumber;
     document.getElementById('player-answer').value = '';
     
     if (correct) {
@@ -62,11 +62,11 @@ function checkAnswer() {
 
 // Code inspired on the methods to update scores from Love Maths project
 function increaseCorrectAnswers() {
-    let previousScore = parseInt(document.getElementById('correct-score').innerText)
+    let previousScore = parseInt(document.getElementById('correct-score').innerText);
     document.getElementById('correct-score').innerText = ++previousScore;
 }
 
 function increaseWrongAnswers() {
-    let previousScore = parseInt(document.getElementById('incorrect-score').innerText)
+    let previousScore = parseInt(document.getElementById('incorrect-score').innerText);
     document.getElementById('incorrect-score').innerText = ++previousScore;
 }
