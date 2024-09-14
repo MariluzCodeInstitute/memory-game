@@ -1,10 +1,9 @@
 document.getElementById('btn-start-game').addEventListener('click', generateRandomNumber);
 document.getElementById('btn-submit').addEventListener('click', checkAnswer);
-
-
+let num;
 
 function generateRandomNumber() {
-    let num = Math.floor(Math.random() * 10);
+    num = Math.floor(Math.random() * 10);
     displayNumber(num)
 }
 
@@ -15,8 +14,13 @@ function displayNumber(number) {
       }, 1000);
 }
 
-function checkAnswer(number) {
-    let userAnswer = parseInt(document.getElementById("player-answer").value);
-    let correct = userAnswer === number
-    console.log(correct)
+function checkAnswer() {
+    let userAnswer = parseInt(document.getElementById('player-answer').value);
+    let correct = userAnswer === num
+
+    if (correct) {
+        alert('Well done! Your answer is correct!');
+    } else {
+        alert(`Sorry! Your answer was ${userAnswer}. The correct answer was ${num}!`);
+    }
 }

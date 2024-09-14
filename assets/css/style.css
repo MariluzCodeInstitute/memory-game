@@ -63,7 +63,7 @@ body {
     color: #0b2bce;
 }
 
-.btn-submit {
+#btn-submit {
     padding: 0.5rem;
     margin-left: 1.5rem;
     background-color: #53bed9;
