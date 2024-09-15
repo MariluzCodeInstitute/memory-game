@@ -12,10 +12,10 @@ This game is perfect for casual gamers, puzzle lovers, and anyone looking to sha
 
 - __Game area__
 
-- In this section the user will be able to initiate the game by clicking on the 'Go!' button.
-- When the game starts, the first sequence of numbers will appear (one at a time) on the numbers box. It will only show for 1 second and then disappear. The first sequence only contains one number.
-- The lenght of the sequences will increase as the player gets more correct answers, and will decrease as they get a wrong answer. This is to encourage the users and keep them engaged with the game. The game fits everyone's ability!
-- To help with engagement there is also a catchy sentence at the top.
+    - In this section the user will be able to initiate the game by clicking on the 'Go!' button.
+    - When the game starts, the first sequence of numbers will appear (one at a time) on the numbers box. It will only show for 1 second and then disappear. The first sequence only contains one number.
+    - The lenght of the sequences will increase as the player gets more correct answers, and will decrease as they get a wrong answer. This is to encourage the users and keep them engaged with the game. The game fits everyone's ability!
+    - To help with engagement there is also a catchy sentence at the top.
 
 ![Game area](assets/images/game_area.png)
 
