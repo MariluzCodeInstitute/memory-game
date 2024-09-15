@@ -66,6 +66,8 @@ The code and the site have been through numerous validators, obtaining very good
 
 ### Unfixed bugs
 
+There are no bugs that needs fixing at the time this README is being written.
+
 ## Deployment
 
 ## Technologies
