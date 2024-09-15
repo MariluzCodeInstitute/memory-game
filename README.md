@@ -82,6 +82,9 @@ Alternativelly you can clon the repo into your machine and open the html file wi
 
 ## Technologies
 
+The main languages used to build this app are HTML, CSS and JavaScript. The code has been implemented using GitPod and it lives on a [GitHub repository](https://github.com/MariluzCodeInstitute/memory-game)
+
+
 ## Credits
 
 ### Content
