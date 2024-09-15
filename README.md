@@ -70,6 +70,16 @@ There are no bugs that needs fixing at the time this README is being written.
 
 ## Deployment
 
+This site is deployed to GitHub pages. The steps that were followed for its deployment are:
+  1. In the GitHub repository, navigate to the settings tab
+  2. On the left-hand sidebar, in the Code and automation section, select Pages.
+  3. Set Source to 'Deploy from Branch', select Main Branch and set Folder to /(root)
+  4. Click Save (it might take a few minutes for the build to finish)
+
+To deploy this project locally using Gitpod, simply run `python3 -m http.server` on the Gitpod terminal and click on 'Open Browser'.
+
+Alternativelly you can clon the repo into your machine and open the html file with your chosen browser.
+
 ## Technologies
 
 ## Credits
