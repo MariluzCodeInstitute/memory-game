@@ -84,9 +84,18 @@ Alternativelly you can clon the repo into your machine and open the html file wi
 
 The main languages used to build this app are HTML, CSS and JavaScript. The code has been implemented using GitPod and it lives on a [GitHub repository](https://github.com/MariluzCodeInstitute/memory-game)
 
-
 ## Credits
 
 ### Content
 
-### Media
+The content of this app has been created by the author based on one of the memory tasks from the IQ test [Wechsler Adult Intelligence Scale - WAIS](https://en.wikipedia.org/wiki/Wechsler_Adult_Intelligence_Scale)
+
+### Code
+
+Some online support has been needed while building this app:
+
+- Some tips on CSS come from the [CSS MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- Support with JavaScript comes from [JS MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and StackOverflow
+- The score area implementation was inspired on the [Love Maths project](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode)
+
+
