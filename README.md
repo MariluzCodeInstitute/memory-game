@@ -39,7 +39,30 @@ This game is perfect for casual gamers, puzzle lovers, and anyone looking to sha
 
 ## Testing
 
+This page is responsive and it will look good on different browsers and devices of all sizes, allowing the player to have a great user experience.
+The code and the site have been through numerous validators, obtaining very good results (see next section for details).
+
 ### Validator testing
+
+- HTML
+    - Passed official W3C HTML validator without any errors. [HTML validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmariluzcodeinstitute.github.io%2Fmemory-game%2F)
+
+    ![HTML validator results](assets/images/HTML_validator_results.png)
+
+- CSS
+    - Passed official W3C CSS validator without any errors. [CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmariluzcodeinstitute.github.io%2Fmemory-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+    ![CSS validator results](assets/images/CSS_validator_results.png)
+
+- JS
+    - Passed the JSHint validator without errors. 
+
+    ![JS validator results](assets/images/JS_validator_results.png)
+
+- Lighthouse
+    - This site achieves high percentages on all the tests performed by Lighthouse.
+
+    ![Lighthouse validator results](assets/images/Lighthouse_results.png)
 
 ### Unfixed bugs
 
