@@ -32,6 +32,11 @@ This game is perfect for casual gamers, puzzle lovers, and anyone looking to sha
 
     ![Score area](assets/images/score_area.png)
 
+ - __Instructions button__
+    - This button toggles the view of a short explanation about how to play the game
+
+    ![Instructions button](assets/images/instructions.png)
+
 ### Features left to implement
 
 - Different play modes based on ability: The player would need to type the numbers they saw but backwards, or ordering before typing them.
