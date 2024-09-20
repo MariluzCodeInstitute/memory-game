@@ -85,3 +85,8 @@ body {
 .incorrect-answers {
     color: #da281b
 }
+
+footer {
+    color: #494b6b;
+    font-weight: bold; 
+}

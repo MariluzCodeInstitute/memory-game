@@ -15,30 +15,42 @@
 </head>
 
 <body>
-    <h1 class="heading">
-        Memory Game
-    </h1>
-    <div class="game-area">
-        <h2>Test your memory - Can you remember all the numbers?</h2>
-        <div class="numbers-area">
-            <div class="numbers-box">
-                <span id="number"></span>
+    <header>
+        <h1 class="heading">
+            Memory Game
+        </h1>
+    </header>
+
+    <main class="game-area">
+        <section>
+            <h2>Test your memory - Can you remember all the numbers?</h2>
+            <div class="numbers-area">
+                <div class="numbers-box">
+                    <span id="number"></span>
+                </div>
+                <button id="btn-start-game">Go!</button>
             </div>
-            <button id="btn-start-game">Go!</button>
-        </div>
-        <div class="input-area">
-            <p>Your answer:</p>
-            <input id="player-answer" type="number">
-        </div>
-        <button id="btn-submit">Check!</button>
-
-        <!-- Score-area code is inspired in the Love Maths project -->
-        <div class="score-area">
-            <p class="correct-answers">Correct: <span id="correct-score">0</span></p>
-            <p class="incorrect-answers">Incorrect: <span id="incorrect-score">0</span></p>
-        </div>
-    </div>
-
+        </section>
+        <section>
+            <div class="input-area">
+                <p>Your answer:</p>
+                <input id="player-answer" type="number">
+            </div>
+            <button id="btn-submit">Check!</button>
+        </section>
+        <section>
+            <!-- Score-area code is inspired in the Love Maths project -->
+            <div class="score-area">
+                <p class="correct-answers">Correct: <span id="correct-score">0</span></p>
+                <p class="incorrect-answers">Incorrect: <span id="incorrect-score">0</span></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Created by Mariluz Herrera</p>
+        <p>Thanks for playing!</p>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 
