@@ -4,7 +4,7 @@ This ultimate number memory challenge will put your brain to the test! In this s
 
 This game is perfect for casual gamers, puzzle lovers, and anyone looking to sharpen their mind. Exercising your memory has been shown to provide significant cognitive benefits across all age groups. For children and adolescents, memory training enhances learning abilities, improves academic performance, and strengthens problem-solving skills. In adults, regular memory exercises can improve focus, increase productivity, and boost overall cognitive function. For older adults, studies indicate that engaging in memory activities can slow cognitive decline, reduce the risk of dementia, and improve quality of life. In fact, research shows that consistent cognitive challenges can increase brain plasticity, which helps maintain mental agility throughout life. You can play for as long or as short as you would like, but even if it is just a few minutes every day, you will keep your brain in great shape!
 
-![Responsive mockup](assets/images/responsive_mockup.png)
+![Responsive mockup](assets/images/responsive_mockup_final.png)
 
 ## Features
 
