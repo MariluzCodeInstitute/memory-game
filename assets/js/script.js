@@ -5,6 +5,7 @@ document.getElementById('player-answer').addEventListener('keydown', function(ev
         checkAnswer();
     }
 });
+document.getElementById('btn-instructions').addEventListener('click', toggleInstructions);
 
 let numbers = [];
 let digits = 1;
@@ -72,4 +73,15 @@ function increaseCorrectAnswers() {
 function increaseWrongAnswers() {
     let previousScore = parseInt(document.getElementById('incorrect-score').innerText);
     document.getElementById('incorrect-score').innerText = ++previousScore;
+}
+
+// Show or hide the instructions when the user clicks on the button
+function toggleInstructions() {
+    let instructions = document.getElementById('instructions-text');
+
+    if (instructions.style.display !== 'block') {
+        instructions.style.display = 'block';
+    } else {
+        instructions.style.display = 'none';
+    }
 }
