@@ -9,6 +9,7 @@ document.getElementById('player-answer').addEventListener('keydown', function(ev
 let numbers = [];
 let digits = 1;
 
+// Generate as many random numbers as the value for digits variable is
 function generateRandomNumber() {
     // Disable input field until last number has been shown
     document.getElementById('player-answer').disabled = true;
@@ -20,6 +21,7 @@ function generateRandomNumber() {
     displayNumbers([...numbers]);
 }
 
+// Display each number temporarily and handle player-anser behaviour
 function displayNumbers(values) {
     if (values.length < 1) {
         document.getElementById('player-answer').disabled = false;
@@ -40,6 +42,7 @@ function blankNumbersBox(values) {
     }, 500);
 }
 
+// Check the player's answer and increase/decrease the value of digits accordingly
 function checkAnswer() {
     let fullNumber = numbers.join('');
     let userAnswer = document.getElementById('player-answer').value;
