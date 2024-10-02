@@ -28,11 +28,12 @@ function generateRandomNumber() {
     displayNumbers([...numbers]);
 }
 
-// Display each number temporarily and handle player-anser behaviour
+// Display each number temporarily and handle player-answer and submit button behaviour
 function displayNumbers(values) {
     if (values.length < 1) {
         document.getElementById('player-answer').disabled = false;
         document.getElementById('player-answer').focus();
+        submitAnswerButton.disabled = false;
         return;
     }
     document.getElementById('number').innerText = values.shift();
@@ -71,6 +72,7 @@ function checkAnswer() {
         }
     }
     numbers = [];
+    submitAnswerButton.disabled = true;
 }
 
 // Code inspired on the methods to update scores from Love Maths project
