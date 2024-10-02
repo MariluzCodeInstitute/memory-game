@@ -52,22 +52,22 @@ The code and the site have been through numerous validators, obtaining very good
 - HTML
     - Passed official W3C HTML validator without any errors. [HTML validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmariluzcodeinstitute.github.io%2Fmemory-game%2F)
 
-    ![HTML validator results](assets/images/HTML_validator_results.png)
+    ![HTML validator results](assets/images/html-validator-result.png)
 
 - CSS
     - Passed official W3C CSS validator without any errors. [CSS validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmariluzcodeinstitute.github.io%2Fmemory-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-    ![CSS validator results](assets/images/CSS_validator_results.png)
+    ![CSS validator results](assets/images/css_validator_results.png)
 
 - JS
     - Passed the JSHint validator without errors. 
 
-    ![JS validator results](assets/images/JS_validator_results.png)
+    ![JS validator results](assets/images/js_validator_results.png)
 
 - Lighthouse
     - This site achieves high percentages on all the tests performed by Lighthouse.
 
-    ![Lighthouse validator results](assets/images/Lighthouse_results.png)
+    ![Lighthouse validator results](assets/images/lighthouse_results.png)
 
 ### Unfixed bugs
 
