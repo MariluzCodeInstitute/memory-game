@@ -18,6 +18,8 @@ let digits = 1;
 function generateRandomNumber() {
     // Disable input field until last number has been shown
     document.getElementById('player-answer').disabled = true;
+    // Disable start button to avoid player clicking on it multiple times
+    startButton.disabled = true;
 
     for (let i = 0; i < digits; i++) {
         numbers.push(Math.floor(Math.random() * 10));
@@ -53,6 +55,9 @@ function checkAnswer() {
     let userAnswer = document.getElementById('player-answer').value;
     let correct = userAnswer === fullNumber;
     document.getElementById('player-answer').value = '';
+
+    // Enable the start button again
+    startButton.disabled = false;
     
     if (correct) {
         alert('Well done! Your answer is correct!');
