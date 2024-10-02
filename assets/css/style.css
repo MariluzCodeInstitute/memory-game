@@ -1,3 +1,4 @@
+/* Default styling */
 body {
     background-color: rgb(246, 241, 241);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -5,6 +6,7 @@ body {
     text-align: center;
 }
 
+/* Game area styling */
 .game-area {
     background-color: #f5d4ac;
     box-sizing: border-box;
@@ -17,11 +19,13 @@ body {
     border-radius: 5%;
 }
 
+/* Numbers area styling */
 .numbers-area {
     display: flex;
     justify-content: center;
 }
 
+/* Styling specific for numbers box */
 .numbers-box {
     background-color: rgb(246, 241, 241);
     width: 9rem;
@@ -32,6 +36,7 @@ body {
     font-size: 2.5rem;
 }
 
+/* Styling for the start button */
 #btn-start-game {
     background-color: #18c30f;
     border-radius: 50%;
@@ -40,6 +45,7 @@ body {
     margin-left: 2rem;
 }
 
+/* Styling for player input area */
 .input-area {
     width: 9rem;
     height: 3rem;
@@ -52,6 +58,7 @@ body {
     font-size: 1.2rem;
 }
 
+/* Style for players input field */
 #player-answer {
     background-color: rgb(246, 241, 241);
     border: none;
@@ -63,6 +70,7 @@ body {
     color: #0b2bce;
 }
 
+/* Style for submit button to check answer */
 #btn-submit {
     padding: 0.5rem;
     margin-left: 1.5rem;
@@ -70,6 +78,7 @@ body {
     font-size: 1rem;
 }
 
+/* Results area and correct/incorrect answers styling */
 .score-area {
     width: 15rem;
     height: 3rem;
@@ -86,11 +95,13 @@ body {
     color: #da281b
 }
 
+/* Styling for button to display instructions */
 #btn-instructions {
     background-color: #dfe0d9;
     border-radius: 7px;
 }
 
+/* Instructions text is hidden by default */
 #instructions-text {
     display: none;
 }
