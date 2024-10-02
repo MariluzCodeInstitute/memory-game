@@ -1,3 +1,4 @@
+// Create variables and add event listeners to main interactive elements of the app
 let startButton = document.getElementById('btn-start-game');
 startButton.addEventListener('click', generateRandomNumber);
 
