@@ -4,7 +4,8 @@ startButton.addEventListener('click', generateRandomNumber);
 let submitAnswerButton = document.getElementById('btn-submit');
 submitAnswerButton.addEventListener('click', checkAnswer);
 
-document.getElementById('player-answer').addEventListener('keydown', function(event) {
+let playerInput = document.getElementById('player-answer');
+playerInput.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         checkAnswer();
     }
@@ -17,7 +18,7 @@ let digits = 1;
 // Generate as many random numbers as the value for digits variable is
 function generateRandomNumber() {
     // Disable input field until last number has been shown
-    document.getElementById('player-answer').disabled = true;
+    playerInput.disabled = true;
     // Disable start button to avoid player clicking on it multiple times
     startButton.disabled = true;
 
@@ -31,8 +32,8 @@ function generateRandomNumber() {
 // Display each number temporarily and handle player-answer and submit button behaviour
 function displayNumbers(values) {
     if (values.length < 1) {
-        document.getElementById('player-answer').disabled = false;
-        document.getElementById('player-answer').focus();
+        playerInput.disabled = false;
+        playerInput.focus();
         submitAnswerButton.disabled = false;
         return;
     }
@@ -53,10 +54,10 @@ function blankNumbersBox(values) {
 // Check the player's answer and increase/decrease the value of digits accordingly
 function checkAnswer() {
     let fullNumber = numbers.join('');
-    let userAnswer = document.getElementById('player-answer').value;
+    let userAnswer = playerInput.value;
     let correct = userAnswer === fullNumber;
-    document.getElementById('player-answer').value = '';
-
+    playerInput.value = '';
+    playerInput.disabled = true;
     // Enable the start button again
     startButton.disabled = false;
     
