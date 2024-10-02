@@ -1,5 +1,9 @@
-document.getElementById('btn-start-game').addEventListener('click', generateRandomNumber);
-document.getElementById('btn-submit').addEventListener('click', checkAnswer);
+let startButton = document.getElementById('btn-start-game');
+startButton.addEventListener('click', generateRandomNumber);
+
+let submitAnswerButton = document.getElementById('btn-submit');
+submitAnswerButton.addEventListener('click', checkAnswer);
+
 document.getElementById('player-answer').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         checkAnswer();
