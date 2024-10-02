@@ -33,25 +33,21 @@
         </section>
         <section>
             <div class="input-area">
-                <p>Your answer:</p>
+                <h3>Your answer:</h3>
                 <!-- Input and button are disabled by default and only enabled when user is allowed to interact with them -->
                 <input id="player-answer" type="number" disabled>
             </div>
             <button id="btn-submit" disabled>Check!</button>
         </section>
-        <section>
-            <!-- Score-area code is inspired in the Love Maths project -->
-            <div class="score-area">
-                <p class="correct-answers">Correct: <span id="correct-score">0</span></p>
-                <p class="incorrect-answers">Incorrect: <span id="incorrect-score">0</span></p>
-            </div>
-        </section>
-        <section>
-            <div class="instructions-area">
-                <button id="btn-instructions">How to play</button>
-                <p id="instructions-text" display="none">You have to remember a sequence of numbers displayed for a second, one at a time, and then input them in the correct order. The more correct answers you get, the longer the sequences will get. If you fail, the sequence will get shorter.</p>
-            </div>
-        </section>
+        <!-- Score-area code is inspired in the Love Maths project -->
+        <div class="score-area">
+            <p class="correct-answers">Correct: <span id="correct-score">0</span></p>
+            <p class="incorrect-answers">Incorrect: <span id="incorrect-score">0</span></p>
+        </div>
+        <div class="instructions-area">
+            <button id="btn-instructions">How to play</button>
+            <p id="instructions-text">You have to remember a sequence of numbers displayed for a second, one at a time, and then input them in the correct order. The more correct answers you get, the longer the sequences will get. If you fail, the sequence will get shorter.</p>
+        </div>
     </main>
 
     <footer>
